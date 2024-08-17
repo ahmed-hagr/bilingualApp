@@ -15,10 +15,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-    require('tailwindcss-rtl'),
-  ],
-  mode: 'jit',
+  plugins: [],
 };
-
 export default config;
