@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  mode: "jit", // JIT mode enabled
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,9 +17,8 @@ const config: Config = {
     },
   },
   plugins: [
-    require('tailwindcss-rtl'),
+    require("tailwindcss-rtl"), // RTL support
   ],
-  mode: 'jit',
 };
 
 export default config;
